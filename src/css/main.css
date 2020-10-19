@@ -136,6 +136,7 @@ display: flex;
     grid-gap:4rem;
     padding:4rem;
     padding-top: 6rem;
+    font-size: 12px;
 
 
 
@@ -223,10 +224,10 @@ display: flex;
     }
 
 
-    .info-div div:first-child{
+    /* .info-div div:first-child{
 
         margin-top: 12rem;
-    }
+    } */
 
     .about-div{
 
@@ -237,7 +238,24 @@ display: flex;
     }
 }
 
-/*ANIMATIONS*/
+
+    @media (max-width:544px){
+
+        
+    .info-div{
+      
+        font-size: 10px;
+            
+    }
+
+    .info-div div:first-child{
+    
+        margin-top: 6rem;
+        
+    }
+    }
+
+    /*ANIMATIONS*/
 
 @keyframes fadein {
     from {
@@ -245,17 +263,5 @@ display: flex;
     }
     to {
         opacity:1;
-    }
-    }
-   
-    @media (max-width:544px){
-
-        
-    .info-div{
-      
-        font-size: 10px;
-       
-
-       
     }
     }
